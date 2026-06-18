@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Car Price Prediction </title>
+<link rel ="stylesheet" href="/static/css/style.css">
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+
+</head>
+
+<body background ="/static/images/background.jpg" align="left">
+             
+    <div class ='input form'>
+        <form action ='/predict' method="POST">
+            <h1 id="heading">   Car Price Prediction </h1>
+            <form>   
+                              
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Year</label>
+                    <input type="text" class="form-control" id="Year" name="Year" placeholder="Year">
+                </div>
+                
+                                
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Present Price</label>
+                    <input type="text" class="form-control" id="Present_Price" name="Present_Price" placeholder="Present_Price">
+                </div>
+                
+                
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Kms Driven</label>
+                    <input type="text" class="form-control" id="Kms_Driven" name="Kms_Driven" placeholder="Kms Driven">
+                </div>
+
+
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Fuel_Type</label>
+                    <select class="form-select"id="Fuel_Type" name="Fuel_Type" aria-label="Fuel_Type">
+                      <option selected >--Select Fuel_Type--</option>
+                      <option value ="0">CNG</option>
+                      <option value="1">Diesel</option>
+                      <option value="2">Petrol</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Transmission</label>
+                    <select class="form-select"id="Transmission" name="Transmission" aria-label="Transmission">
+                      <option selected >--Select Transmission type--</option>
+                      <option value ="Automatic">Automatic</option>
+                      <option value="Manual">Manual</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                     <label for="exampleInputEmail1"   class="form-label">Owner</label>
+                     <input type="text" class="form-control" id="Owner" name="Owner" placeholder="Owner">
+                </div> 
+
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Seller Type</label>
+                    <select class="form-select"id="Seller_Type_Individual" name="Seller_Type_Individual" aria-label="Seller_Type_Individual">
+                      <option selected >--Select Seller Type--</option>
+                      <option value ="0">Dealer</option>
+                      <option value="1">Individual</option>
+                    </select>
+
+                
+                <div class="text-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+                
+                <div class="text-center" style="margin-top: 20px;">
+                <h2>{{ prediction_text }}</h2>
+                </div>
+            </form>
+        
+            <!-- <br>
+            <h2>{{ prediction_text }}</h2> -->
+        </form>
+    </div>
+</div>
+</body>
+</html>
+                  
+                  
+                
+                
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
